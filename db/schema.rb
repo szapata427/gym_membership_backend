@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_06_194407) do
+ActiveRecord::Schema.define(version: 2019_06_14_010628) do
 
   create_table "gyms", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,15 @@ ActiveRecord::Schema.define(version: 2019_06_06_194407) do
     t.string "value"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "mainImageUrl"
+    t.integer "gym_id"
+    t.string "otherImageUrl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["gym_id"], name: "index_images_on_gym_id"
   end
 
   create_table "memberships", force: :cascade do |t|
