@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  name: MyString
+  montlyPrice: 9.99
+  initialPayment: 9.99
+  yearlyFee: 9.99
+  yearlyPrice: 9.99
+  monthly: false
+
+two:
+  type: 
+  name: MyString
+  montlyPrice: 9.99
+  initialPayment: 9.99
+  yearlyFee: 9.99
+  yearlyPrice: 9.99
+  monthly: false
