@@ -31,13 +31,17 @@ ActiveRecord::Schema.define(version: 2019_06_14_010628) do
 
   create_table "memberships", force: :cascade do |t|
     t.integer "gym_id"
-    t.string "type"
     t.string "name"
-    t.decimal "montlyPrice"
-    t.decimal "initialPayment"
+    t.string "totalDueAtSigning"
+    t.decimal "monthlyPrice"
+    t.decimal "initialFee"
     t.decimal "yearlyFee"
     t.decimal "yearlyPrice"
     t.boolean "monthly"
+    t.boolean "multiclub"
+    t.boolean "online"
+    t.boolean "contract"
+    t.decimal "contractMonths"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["gym_id"], name: "index_memberships_on_gym_id"

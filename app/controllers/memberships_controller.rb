@@ -9,4 +9,8 @@ class MembershipsController < ApplicationController
         @membership = Gym.find(params[:id])
         render json: @membership
     end
+
+    # def create
+    #     @membership = Membership.create()
+    # end
 end
